@@ -1,0 +1,135 @@
+/**
+ * Base URL
+ * HTTP path or url where the browser will look for fonts
+ * URL can be an absolute HTTP (`//pasteup.guim.co.uk/fonts/`) or relative (`../`)
+ */
+
+// if you use an asset domain, you would set it to:
+// $guss-webfonts-base-url: '//assets.yourdomain.com/path/to/guss-webfonts';
+$guss-webfonts-base-url: 'bower_components/guss-webfonts/webfonts/';
+
+/**
+ * Charset
+ *
+ * - ascii: 256 characters only, very small
+ * - latin1: latin 1 character set
+ * - original: full character set
+ */
+$guss-webfonts-charset: 'original';
+
+/**
+ * Hinting
+ *
+ * - cleartype: larger file, better rendering in Windows
+ * - auto: even larger file, better rendering in Windows in Chrome with 
+ *   font-smoothing disabled (the default in XP pre-servicepack 1)
+ * - off: smaller files, render well on HiDPI displays
+ */
+$guss-webfonts-hinting: 'off';
+
+/**
+ * Kerning
+ *
+ * - on: larger file, better rendering
+ * - off: smaller files
+ */
+$guss-webfonts-kerning: 'on';
+
+/**
+ * Version
+ *
+ * Version of the fonts to use
+ */
+$guss-webfonts-version: '';
+
+
+@import 'bower_components/guss-webfonts/src/_webfonts';
+// Guardian Agate Sans 1 Web and Guardian Sans Web
+@include guss-webfonts();
+
+
+@mixin image{
+	width: 100%;
+	height: auto;
+}
+
+    body {
+            margin: 0;
+            color: #fff;
+            font-family: 'Guardian Agate Sans 1 Web';
+            width: 640px;
+
+        }
+    .header{
+            background: #222;
+            border-bottom: solid 1px #111;
+            border-top: solid 1px #444;
+            padding: 1%;
+            position: fixed;
+            z-index: 3;
+      right: 0px;
+      left: 0px;
+    }
+        .followMeBar {
+            background: #222;
+            border-bottom: solid 1px #dcdad5;
+            padding: 1%;
+            position: relative;
+            z-index: 1;
+      top: -4px;
+    height: 50px;
+    background-color: #f6f6f6;
+        
+        & p{
+	        float: left;
+	        width: 80%;
+	        margin-left: 3%;
+	        margin-top: 8px;
+	        color: #676767;
+        }
+        
+        & img{
+	        float: left;
+	        width: 10%;
+        }
+        
+        }
+        
+        .contentHeight{
+	        padding-bottom: 100px;
+        }
+        
+        
+        
+        .followMeBar.fixed {
+            position: fixed;
+            top: 0px;
+            width: 625px;
+            z-index: 0;
+        }
+        .followMeBar.fixed.absolute {
+            position: absolute;
+      top: 45px;
+        }
+        
+        #content{
+	        height: 700px;
+	        background-color: #eaeaea;
+	        margin-top: -5px;
+        
+       & img{
+	       @include image;
+       }
+       
+        }
+        
+        
+        
+        .g__menu{
+	     & img{
+		    @include image;
+	     }   
+	        }
+        
+        
+        

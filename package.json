@@ -1,0 +1,15 @@
+{
+  "name": "myguardian",
+  "version": "1.0.0",
+  "description": "prototype of the myguardian feed",
+  "main": "GruntFile.js",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben Longden",
+  "license": "ISC"
+}
