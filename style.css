@@ -529,8 +529,7 @@
 body {
   margin: 0;
   color: #fff;
-  font-family: 'Guardian Agate Sans 1 Web';
-  width: 640px; }
+  font-family: 'Guardian Agate Sans 1 Web'; }
 
 .header {
   background: #222;
@@ -567,7 +566,6 @@ body {
 .followMeBar.fixed {
   position: fixed;
   top: 0px;
-  width: 625px;
   z-index: 0; }
 
 .followMeBar.fixed.absolute {

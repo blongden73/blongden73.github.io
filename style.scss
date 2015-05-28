@@ -57,7 +57,7 @@ $guss-webfonts-version: '';
             margin: 0;
             color: #fff;
             font-family: 'Guardian Agate Sans 1 Web';
-			width: 100%;
+
         }
     .header{
             background: #222;
@@ -103,7 +103,6 @@ $guss-webfonts-version: '';
         .followMeBar.fixed {
             position: fixed;
             top: 0px;
-            width: 625px;
             z-index: 0;
         }
         .followMeBar.fixed.absolute {
